@@ -1,0 +1,9 @@
+config,chain,layers,tasks,build_ms,optimize_ms,pickle_ms,payload_b
+dp2_object,raw read,FromHealpixMap,1,0.8570794947445393,0.5892359185963869,30.760019179433584,227209
+dp2_object,+ map_partitions,MapPartitions<-FromHealpixMap,2,1.7840423039160669,0.39019109681248665,58.57728719711304,355292
+dp2_object,+ map_partitions x2,MapPartitions<-MapPartitions<-FromHealpixMap,3,2.703149348963052,0.40113087743520737,83.35132622160017,482564
+dp2_object,+ select 3 columns,SelectColumns<-FromHealpixMap,2,1.7882457468658686,0.40006102062761784,32.08325421437621,229102
+hf_gaia,raw read,FromHealpixMap,1,5.346154060680419,0.7588120643049479,2.154767606407404,17599
+hf_gaia,+ map_partitions,MapPartitions<-FromHealpixMap,2,11.556602944619954,0.34752185456454754,3.4225560259073973,29038
+hf_gaia,+ map_partitions x2,MapPartitions<-MapPartitions<-FromHealpixMap,3,17.649217101279646,0.5286079831421375,4.959227982908487,39666
+hf_gaia,+ select 3 columns,SelectColumns<-FromHealpixMap,2,11.561705346684903,0.3416819963604212,2.794576622545719,23932
